@@ -9,7 +9,7 @@ Expected Labels on Pull Requests:
 
 ## Usage
 
-To use, run the container with your github repository mounted to it (or using the `docker.inside` functionality in Jenkins) and just run `calculate_semver`. It will simply output the next semantic version that should be used.
+To use, run the container with your github repository mounted to it (or using the `docker.inside` functionality in Jenkins) and just run `calculate_semver`. It will simply output the next semantic version that should be used. Non-master branches will generate a "build" tag, formatted as `VERSION-BRANCH.SHORTHASH`.
 
 ** Jenkins Example: **
 
